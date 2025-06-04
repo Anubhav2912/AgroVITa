@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/machinerystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Machinery</title>
+</head>
+<body>
+    <section class="header">
+    <div class="nav-bar">
+        <div class="left-side">
+            <div class="logo">
+                <img src="image/AgroVITa.png" alt="AgroVITa" title="AgroVITa">
+            </div>
+        </div>
+
+        <div class="right-side">
+
+            <ul id="nav-links">
+                <li ><a th:href="@{/securehome}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a th:href="@{/product}"><i class="fa fa-leaf" aria-hidden="true"></i>Product</a></li>
+                <li><a th:href="@{/machinery}"><i class="fa fa-bus" aria-hidden="true"></i>Machinery</a></li>
+                <li><a th:href="@{/crop-prediction}"><i class="fa fa-asl-interpreting"></i>Crop Prediction</a></li>
+                <li><a th:href="@{/contact}"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+            </ul>
+
+            
+      
+        </div>
+     
+       
+        <a th:href="@{/logout}"><button id="login"><i class="fa fa-fw fa-user"></i>Log out</button></a>
+
+        
+        <button class="right-bar">
+            <span class="bar"></span>
+        </button>
+
+
+        <div class="mobile_nav">
+        
+            <ul id="mobile_nav_links">
+                <li ><a th:href="@{/}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a th:href="@{/product}"><i class="fa fa-leaf" aria-hidden="true"></i>Product</a></li>
+                <li><a th:href="@{/machinery}"><i class="fa fa-bus" aria-hidden="true"></i>Machinery</a></li>
+                <li><a th:href="@{/crop-prediction}"><i class="fa fa-asl-interpreting"></i>Crop Prediction</a></li>
+                <li><a th:href="@{/contact}"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+            </ul>
+            <a th:href="@{/logout}><button id="mobile_login"><i class="fa fa-fw fa-user"></i>log out</button></a>
+            <div class="mobile_footer">
+               <p>Copyright&copy; 2024 AgroVITa. All Rights Reserved</p>
+            </div>
+        </div>
+
+       
+       
+    </div>
+
+</section>
+
+
+
+    <section class="services">
+        <div class="heading">
+            <p>Our Services</p>
+        </div>
+        <div class="service-image">
+          
+        </div>
+
+
+        <div class="cards">
+            <div class="actual-card">
+                <div class="card-image">
+                    <img src="image\buy (2).png">
+                </div>
+                <div class="content">
+                    <div class="head">
+                      
+                    </div>
+                    
+                    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel,non eius possimus?</p>
+                    <p id="more">Learn More</p>
+                </div>
+            </div>
+            <div class="actual-card">
+                <div class="card-image">
+                    <img src="image\sell (2).png">
+                </div>
+                <div class="content">
+                    <div class="head">
+                      
+                    </div>
+                    
+                    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel,non eius possimus?</p>
+                    <p id="more">Learn More</p>
+                </div>
+            </div>
+            <div class="actual-card">
+                <div class="card-image">
+                    <img src="image\rent (2).png">
+                </div>
+                <div class="content">
+                    <div class="head">
+                        
+                    </div>
+                    
+                    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel,non eius possimus?</p>
+                    <p id="more">Learn More</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+
+    <section class="footer">
+        <div class="left-side-footer">
+            <p>&copy;2024 All Rights Reserved.AgroVITa</p>
+        </div>
+        <div class="right-side-footer">
+            <p>Web Design and Development by<a href="index.html">AgroVITa Team</a></p>
+        </div>
+    </section>
+
+
+   
+</body>
+</html>

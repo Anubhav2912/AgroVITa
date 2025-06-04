@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CropPrediction-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/script.js"></script>
+    <title>Crop Prediction</title>
+</head>
+<body>
+
+
+    <section class="header">
+
+        <div class="nav-bar">
+            <div class="left-side">
+                <div class="logo">
+                    <img src="image/AgroVITa.png" alt="AgroVITa" title="AgroVITa">
+                </div>
+            </div>
+    
+            <div class="right-side">
+    
+                <ul id="nav-links">
+                    <li ><a th:href="@{/securehome}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li><a th:href="@{/product}"><i class="fa fa-leaf" aria-hidden="true"></i>Product</a></li>
+                    <li><a th:href="@{/machinery}"><i class="fa fa-bus" aria-hidden="true"></i>Machinery</a></li>
+                    <li><a th:href="@{/crop-prediction}"><i class="fa fa-asl-interpreting"></i>Crop Prediction</a></li>
+                    <li><a th:href="@{/contact}"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+                </ul>
+    
+                
+          
+            </div>
+         
+           
+            <a th:href="@{/logout}"><button id="login"><i class="fa fa-fw fa-user"></i>Logout</button></a>
+    
+            
+            <button class="right-bar">
+                <span class="bar"></span>
+            </button>
+           
+        </div>
+    
+        
+        
+    
+        <div class="mobile_nav">
+            
+            <ul id="mobile_nav_links">
+                <li ><a th:href="@{/securehome}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a th:href="@{/product}"><i class="fa fa-leaf" aria-hidden="true"></i>Product</a></li>
+                <li><a th:href="@{/machinery}"><i class="fa fa-bus" aria-hidden="true"></i>Machinery</a></li>
+                <li><a th:href="@{/crop-prediction}"><i class="fa fa-asl-interpreting"></i>Crop Prediction</a></li>
+                <li><a th:href="@{/contact}"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+            </ul>
+            <a th:href="@{/logout}"><button id="mobile_login"><i class="fa fa-fw fa-user"></i>Logout</button></a>
+            <div class="mobile_footer">
+               <p>Copyright&copy; 2024 AgroVITa. All Rights Reserved</p>
+            </div>
+        </div>
+    
+        <div class="hero-image">
+         
+            <h1>Crop Prediction</h1>
+           
+        </div>
+
+    </section>
+
+   
+    <section>
+
+        <section class="body">
+
+            <div class="predict-button-wrapper">
+                <a href="https://crop-prediction-ml-model.onrender.com" target="_blank" rel="noopener noreferrer" class="predict-button">Predict my crop</a>
+            </div>
+            
+                <div class="Product">
+                    <h2>       </h2>
+                    <h1>Product</h1>
+                    <div class="wheat-grain">
+                        <div class="image">
+                            <img src="./image/wheat-grain.jpg">
+                        </div>
+                        <div class="content">
+                            <h1>What fetilizer is best for Wheat?</h1>
+                            <h2>Phosphorus (P) – Potassium (K)</h2>
+                               <p> P and K are the two most important nutrients after N for 
+                                wheat Crop Prediction. Usually, the total P and K Product are 
+                                added to the crop at sowing. Usually, most of them are controlled 
+                                released Product to reduce nutrient leakage and offer better 
+                                results.</p>
+                                </div>
+                    </div>
+                    <div class="legumes">
+                        <div class="image">
+                            <img src="./image/legumes.jpg">
+                        </div>
+                        <div class="content">
+                            <h1>What is the best suitable area and time to grow Legumes?</h1>
+                            <p>Plant in the heaviest of soils, and plant as late as November on the coast. 
+                                This plant ignores winter and chugs along producing lots of carbon-rich foliage to compost,
+                                 and fixing nitrogen as it grows. In the spring, just cut the plants down at ground level and 
+                                 lay them as a mulch over spring beds.</p>
+                        </div>
+                    </div>
+                    <div class="vegetables">
+                        <div class="image">
+                            <img src="./image/vegetables.jpg">
+                        </div>
+                        <div class="content">
+                            <h1>What is the best Climate to grow leaf Vegetables?</h1>
+                            <p>
+                                Leafy greens grow best in full sun, well-drained soil, and cool temperatures. 
+                                Leafy greens require cool, moist growing conditions. Daytime temperatures of 
+                                70 to 75°F and nighttime temperatures of 55 to 60°F are ideal. Adequate supplies 
+                                of moisture and nutrients are also important.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="roots">
+                        <div class="image">
+                            <img src="./image/carrot.jpg">
+                        </div>
+                        <div class="content">
+                            <h1>What is the best Climate to grow Root Vegetables?</h1>
+                            <p>Most root vegetables grow best in cool weather, but some are capable of 
+                                thriving in the summer heat. Beets, radishes, carrots, and turnips are 
+                                easy-to-grow, cool weather Product that provide a worthwhile harvest even
+                                 in a small space.</p>
+                        </div>
+                    </div>
+                    
+        <!--new-->
+                    <div class="ferti">
+                        <div class="image">
+                            <img src="./image/fertilizer.jpg">
+                        </div>
+                        <div class="content">
+                            <h1>Common fertilizer used for Crop Prediction</h1>
+                            <p>The three major types of commercial fertilizer used in the U.S. are 
+                                nitrogen, phosphate, and potash. Nitrogen (N) is found primarily in 
+                                an organic form in soils but can also occur as nitrate.</p>
+                        </div>
+                    </div>
+
+        <!--New-->
+                    <div class="pesti">
+                        <div class="image">
+                            <img src="./image/pesti.jpg">
+                        </div>
+                        <div class="content">
+                            <h1>How to store pestisides?</h1>
+                            <p>If possible, keep pesticides in a locked cabinet in a well-ventilated 
+                                utility area or garden shed. Never store pesticides in cabinets with or 3
+                                near food, animal feed, or medical supplies. Store flammable liquids outside your 
+                                living area and far away from an ignition source such as a furnace, car, grill, or 
+                                lawn mower.</p>
+                        </div>                        
+                    </div>
+
+                    
+                    
+                    
+                </div>
+        </section>
+        
+        
+        
+        <section class="footer">
+            <div class="left-side-footer">
+                <p>&copy;2024 All Rights Reserved.AgroVITa.</p>
+            </div>
+            <div class="right-side-footer">
+                <p>Web Design and Development by<a href="index.html">AgroVITa Team</a></p>
+            </div>
+        </section>
+    </section>
+
+</body>
+</html>

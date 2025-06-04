@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_style.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/search_bar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AgroVITa</title>
+</head>
+<body>
+
+
+<div class="home">
+    <div class="nav-bar">
+        <div class="left-side">
+            <div class="logo">
+                <img src="image\AgroVITa.png" alt="Agri-Logo" title="Agri">
+            </div>
+        </div>
+
+        <div class="right-side">
+
+            <ul id="nav-links">
+                <li ><a th:href="@{/securehome}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a th:href="@{/product}"><i class="fa fa-leaf" aria-hidden="true"></i>Product</a></li>
+                <li><a th:href="@{/machinery}"><i class="fa fa-bus" aria-hidden="true"></i>Machinery</a></li>
+                <li><a th:href="@{/crop-prediction}"><i class="fa fa-asl-interpreting"></i>Crop Prediction</a></li>
+                <li><a th:href="@{/contact}"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+            </ul>
+
+
+
+        </div>
+
+
+        <a th:href="@{/logout}"><button id="login"><i class="fa fa-fw fa-user"></i>Log out</button></a>
+
+
+        <button class="right-bar">
+            <span class="bar"></span>
+        </button>
+
+    </div>
+
+
+
+
+    <div class="mobile_nav">
+
+        <ul id="mobile_nav_links">
+            <li ><a th:href="@{/}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a th:href="@{/product}"><i class="fa fa-leaf" aria-hidden="true"></i>Product</a>
+            <li><a th:href="@{/machinery}"><i class="fa fa-bus" aria-hidden="true"></i>Machinery</a></li>
+            <li><a th:href="@{/crop-prediction}"><i class="fa fa-asl-interpreting"></i>Crop Prediction</a></li>
+            <li><a th:href="@{/contact}"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+        </ul>
+        <a th:href="@{/logout}"><button id="mobile_login"><i class="fa fa-fw fa-user"></i>Log out</button></a>
+        <div class="mobile_footer">
+            <p>Copyright&copy; 2024 AgroVITa . All Rights Reserved</p>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <video autoplay muted loop>
+            <source src="image\Pexels Videos 2758322.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="search_bar">
+        <div class="search_img">
+            <img src="image\Search_img.png" alt="search_image">
+        </div>
+
+        <input type="text" placeholder="Quick Search" id="quick_search">
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="sub-home">
+    <div class="looking-for">
+
+        <div class="card">
+            <div class="img">
+                <img src="image\crops-image.jpeg" alt="Product">
+            </div>
+            <div class="description">
+                <p><a th:href="@{/product}">looking for Product?</a><span>&nbsp;&rarr;</span></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="image\machine-2.jpeg">
+            </div>
+
+            <div class="description">
+                <p><a th:href="@{/rent-machine}">looking for Machinery?</a><span>&nbsp; &rarr;</span></p>
+            </div>
+        </div>
+
+        <!--
+        <div class="card">
+            <div class="img">
+                <img src="image\machine-3.jpeg">
+            </div>
+            <div class="description">
+                <p><a th:href="@{/sell-machine}">looking to sell a machine?</a><span id="arrow">&nbsp; &rarr;</span></p>
+            </div>
+        </div>
+        -->
+
+
+        <div class="card">
+            <div class="img">
+                <img src="image\information.jpg">
+            </div>
+            <div class="description">
+                <p><a th:href="@{/crop-prediction}">looking for information?</a><span>&nbsp; &rarr;</span></p>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="sub-hero-image" id="sub-hero-image">
+
+</div>
+
+
+<div class="about-AgroVITa">
+    <div class="about">
+        <div class="image">
+            <p id="inc">About AgroVITa, Inc.</p>
+            <img src="image/about-AgroVITa.jpg" alt="About AgroVITa">
+        </div>
+        <div class="about-para">
+            <p>
+                At <span>AgroVITa</span>, based in Kandy, we offer expert advice with a wide variety of specialist products.
+                We are fortunate to provide clients with the opportunity to test-drive machines on our farm.
+                We have talented individuals across the country producing the world’s finest products.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<section class="services">
+    <div class="heading">
+        <p>Our Services</p>
+    </div>
+    <div class="service-image">
+
+    </div>
+
+
+    <div class="cards">
+        <div class="actual-card">
+            <div class="card-image">
+                <img src="image\buy (2).png">
+            </div>
+            <div class="content">
+                <div class="head">
+
+                </div>
+
+                <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel,non eius possimus?</p>
+                <p id="more">Learn More</p>
+            </div>
+        </div>
+        <div class="actual-card">
+            <div class="card-image">
+                <img src="image\sell (2).png">
+            </div>
+            <div class="content">
+                <div class="head">
+
+                </div>
+
+                <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel,non eius possimus?</p>
+                <p id="more">Learn More</p>
+            </div>
+        </div>
+        <div class="actual-card">
+            <div class="card-image">
+                <img src="image\rent (2).png">
+            </div>
+            <div class="content">
+                <div class="head">
+
+                </div>
+
+                <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel,non eius possimus?</p>
+                <p id="more">Learn More</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="our-partners">
+    <h3>-- Our Partners</h3>
+    <div class="partners-sub-heading">
+        <h1>We Partner With Highly Professionals</h1>
+    </div>
+    <div class="partners">
+        <div class="img1" id="partners-img">
+            <img src="image\FarmTech-Logo.png">
+        </div>
+        <div class="img2" id="partners-img">
+            <img src="image\Department-LOGO.png">
+        </div>
+        <div class="img3" id="partners-img">
+            <img src="image\icarda.jpg">
+        </div>
+        <div class="img4" id="partners-img">
+            <img src="image\kk_logo.png">
+        </div>
+    </div>
+</section>
+
+
+
+<section class="recent-updates">
+    <h1>Check out our recent news and updates</h1>
+    <div class="recent-pics">
+        <div class="recent-img1">
+            <img src="image/recent-img1.jpg">
+            <div class="flex">
+                <div class="date"><span id="date">30</span><span id="year">December 2024</span></div>
+                <div class="img-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis risus vitae lacus pulvinar suscipit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="recent-img2">
+            <img src="image\recent-img2.jpg">
+            <div class="flex">
+                <div class="date"><span id="date">5</span><span id="year">October 2024</span></div>
+                <div class="img-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis risus vitae lacus pulvinar suscipit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="recent-img3">
+            <img src="image\recent-img3.jpg">
+            <div class="flex">
+                <div class="date"><span id="date">18</span><span id="year">September 2024</span></div>
+                <div class="img-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis risus vitae lacus pulvinar suscipit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="what-they-say">
+    <h1>What Our Customer says about us</h1>
+    <div class="div">
+        <div class="what-they-say-image">
+            <img src="image\what-they-img.png">
+        </div>
+
+        <div class="reviews">
+
+            <div class="review active">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti,!"</p>
+                <div class="img-review">
+                    <div class="user-profile1">
+
+                    </div>
+                    <h3>Deepak Tomar</h3>
+                </div>
+                <div class="review-rating">
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div-none">&#9734;</div>
+                    <span id="review1-rating">4/5</span>
+                </div>
+            </div>
+            <div class="review">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti,!"</p>
+                <div class="img-review">
+                    <div class="user-profile2">
+
+                    </div>
+                    <h3>Manojkumar</h3>
+                </div>
+                <div class="review-rating">
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div-none">&#9734;</div>
+                    <div class="star-div-none">&#9734;</div>
+                    <span id="review1-rating">3/5</span>
+                </div>
+            </div>
+            <div class="review">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti,!"</p>
+                <div class="img-review">
+                    <div class="user-profile3">
+
+                    </div>
+                    <h3>Manish Vaishnav</h3>
+                </div>
+                <div class="review-rating">
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div-none">&#9734;</div>
+                    <span id="review1-rating">4/5</span>
+                </div>
+            </div>
+            <div class="review">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti,!"</p>
+                <div class="img-review">
+                    <div class="user-profile4">
+
+                    </div>
+                    <h3>Jay singh</h3>
+                </div>
+                <div class="review-rating">
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <span id="review1-rating">5/5</span>
+
+                </div>
+            </div>
+            <div class="review">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere placeat laudantium facilis ullam iure numquam quidem
+                    amet doloremque, maiores, ad modi veritatis ea aliquam nisi pariatur,
+                    architecto voluptas omnis labore."</p>
+                <div class="img-review">
+                    <div class="user-profile5">
+
+                    </div>
+                    <h3>Alex Lee</h3>
+                </div>
+                <div class="review-rating">
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div">&#9733;</div>
+                    <div class="star-div-none">&#9734;</div>
+                    <span id="review1-rating">4/5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="footer">
+    <div class="left-side-footer">
+        <p>&copy;2024 All Rights Reserved.AgroVITa</p>
+    </div>
+    <div class="right-side-footer">
+        <p>Web Design and Development by<a href="index.html">AgroVITa Team</a></p>
+    </div>
+</section>
+
+
+
+</body>
+</html>

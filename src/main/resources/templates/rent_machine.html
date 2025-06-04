@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/rent_machine.css">
+    <script defer src="js/add_post.js"></script>
+    <title>Rent Machine</title>
+</head>
+<body>
+
+    <section class="header">
+        <div class="nav-bar">
+            <div class="left-side">
+                <div class="logo">
+                    <img src="image/AgroVITa.png" alt="AgroVITa" title="AgroVITa">
+                </div>
+            </div>
+    
+            <div class="right-side">
+    
+                <ul id="nav-links">
+                    <li ><a th:href="@{/securehome}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li><a th:href="@{/product}"><i class="fa fa-leaf" aria-hidden="true"></i>Product</a></li>
+                    <li><a th:href="@{/rent-machine}"><i class="fa fa-bus" aria-hidden="true"></i>Machinery</a></li>
+                    <li><a th:href="@{/crop-prediction}"><i class="fa fa-asl-interpreting"></i>Crop Prediction</a></li>
+                    <li><a th:href="@{/contact}"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+                </ul>
+    
+                
+          
+            </div>
+         
+           
+            <a href="logout.html"><button id="login"><i class="fa fa-fw fa-user"></i>Logout</button></a>
+    
+            
+            <button class="right-bar">
+                <span class="bar"></span>
+            </button>
+    
+    
+            <div class="mobile_nav">
+            
+                <ul id="mobile_nav_links">
+                    <li ><a th:href="@{/}"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li><a th:href="@{/product}"><i class="fa fa-leaf" aria-hidden="true"></i>Product</a>
+                    <li><a th:href="@{/rent-machine}"><i class="fa fa-bus" aria-hidden="true"></i>Machinery</a></li>
+                    <li><a th:href="@{/crop-prediction}"><i class="fa fa-asl-interpreting"></i>Crop Prediction</a></li>
+                    <li><a th:href="@{/contact}"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+                </ul>
+                <a href="logout.html"><button id="mobile_login"><i class="fa fa-fw fa-user"></i>Logout</button></a>
+                <div class="mobile_footer">
+                   <p>Copyright&copy; 2024 AgroVITa. All Rights Reserved</p>
+                </div>
+            </div>
+    
+           
+           
+        </div>
+    
+    </section>
+
+
+    <div class="hero-image">
+        
+        <div class="rent-a-machine-text">
+            <h1>Want to Rent<a th:href="@{/sell-machine}">/Sell</a> a Machine?</h1>
+        </div>
+    </div>
+
+
+
+    <section class="Add-Post">
+        <button class="post_btn" >
+            <a href="http://127.0.0.1:5000/">Add Post</a>
+        </button>
+
+    </section>
+
+
+
+
+
+    <!--Products-->
+    <section class="rent-box">
+
+        <!--Garden Tractor-->
+        <div class="boxes">
+            <div class="hero_img">
+                <img src="./image/garden-tractor.jpg">
+            </div>
+            <div class="machine-name">
+                <p>Garden Tractor</p>
+            </div>
+            <div class="price">
+                <p>₹1,50,000</p>
+                
+                    <div class="star1">☆</div>
+                    <div class="star1">☆</div>
+                    <div class="star1">☆</div>
+                    <div class="star1">☆</div>
+                    <div class="star1">☆</div>
+                
+                
+               
+                
+            </div>
+            <div class="rent">
+                <button>Contact</button>
+            </div>
+        </div>
+
+
+        <!--excavator-->
+        <div class="boxes">
+            <div class="hero_img">
+                <img src="./image/excavator.jpg">
+            </div>
+            <div class="machine-name">
+                <p>Excavator</p>
+            </div>
+            <div class="price">
+                <p>₹5,74,000</p>
+                <div class="star2">☆</div>
+                    <div class="star2">☆</div>
+                    <div class="star2">☆</div>
+                    <div class="star2">☆</div>
+                    <div class="star2">☆</div>
+            </div>
+            <div class="rent">
+                <button>Contact</button>
+            </div>
+        </div>
+
+        <!--Mover-->
+        <div class="boxes">
+            <div class="hero_img">
+                <img src="./image/mover.jpg">
+            </div>
+            <div class="machine-name">
+                <p>Mover</p>
+            </div>
+            <div class="price">
+                <p>₹2,46,000</p>
+                <div class="star3">☆</div>
+                    <div class="star3">☆</div>
+                    <div class="star3">☆</div>
+                    <div class="star3">☆</div>
+                    <div class="star3">☆</div>
+            </div>
+            <div class="rent">
+                <button>Contact</button>
+            </div>
+        </div>
+
+        <!--Dumb Truck-->
+        <div class="boxes">
+            <div class="hero_img">
+                <img src="./image/dumb truck.jpg">
+            </div>
+            <div class="machine-name">
+                <p>Dumb Truck</p>
+            </div>
+            <div class="price">
+                <p>₹8,22,390</p>
+                <div class="star4">☆</div>
+                    <div class="star4">☆</div>
+                    <div class="star4">☆</div>
+                    <div class="star4">☆</div>
+                    <div class="star4">☆</div>
+            </div>
+            <div class="rent">
+                <button>Contact</button>
+            </div>
+        </div>
+
+
+        <!--Cement Mixer-->
+        <div class="boxes">
+            <div class="hero_img">
+                <img src="./image/cement-mixer.jpg">
+            </div>
+            <div class="machine-name">
+                <p></p>
+            </div>
+            <div class="price">
+                <p>₹2,52,000</p>
+                <div class="star5">☆</div>
+                    <div class="star5">☆</div>
+                    <div class="star5">☆</div>
+                    <div class="star5">☆</div>
+                    <div class="star5">☆</div>
+            </div>
+            <div class="rent">
+                <button>Contact</button>
+            </div>
+        </div>
+
+
+        <!--Fork Lift-->
+        <div class="boxes">
+            <div class="hero_img">
+                <img src="./image/fork-lift.jpg">
+            </div>
+            <div class="machine-name">
+                <p>Fork Lift</p>
+            </div>
+            <div class="price">
+                <p>₹1,63,000</p>
+                    <div class="star6">☆</div>
+                    <div class="star6">☆</div>
+                    <div class="star6">☆</div>
+                    <div class="star6">☆</div>
+                    <div class="star6">☆</div>
+            </div>
+            <div class="rent">
+                <button>Contact</button>
+            </div>
+        </div>
+
+
+        <!--Earth Moving truck-->
+        <div class="boxes">
+            <div class="hero_img">
+                <img src="./image/earth-moving-truck.jpg">
+            </div>
+            <div class="machine-name">
+                <p>Earth Moving</p>
+            </div>
+            <div class="price">
+                <p>₹7,21,000</p>
+                <div class="star7">☆</div>
+                    <div class="star7">☆</div>
+                    <div class="star7">☆</div>
+                    <div class="star7">☆</div>
+                    <div class="star7">☆</div>
+            </div>
+            <div class="rent">
+                <button>Contact</button>
+            </div>
+        </div>
+
+        <!--Utility Tractor-->
+        <div class="boxes">
+            <div class="hero_img">
+                <img src="./image/utility-tractor.jpg">
+            </div>
+            <div class="machine-name">
+                <p>Utility Tractor</p>
+            </div>
+            <div class="price">
+                <p>₹3,12,000</p>
+                    <div class="star8">☆</div>
+                    <div class="star8">☆</div>
+                    <div class="star8">☆</div>
+                    <div class="star8">☆</div>
+                    <div class="star8">☆</div>
+            </div>
+            <div class="rent">
+                <button>Contact</button>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <section class="footer">
+        <div class="left-side-footer">
+            <p>&copy;2024 All Rights Reserved.AgroVITa.</p>
+        </div>
+        <div class="right-side-footer">
+            <p>Web Design and Development by<a href="index.html">AgroVITa Team</a></p>
+        </div>
+    </section>
+
+
+</body>
+</html>
+

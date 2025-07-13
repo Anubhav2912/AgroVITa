@@ -1,4 +1,4 @@
-# 🌿 AgroVITa
+# 🌿 AgroVITa : Innovation meets farming
 
 Welcome to **AgroVITa**! This repository hosts a full-stack web application, built with a robust Java backend and a dynamic frontend utilizing modern web technologies. While specific functionalities aren't detailed within the repository, the project is designed as a comprehensive solution, likely targeting the agricultural sector given its name, by providing both server-side logic and an interactive user interface.
 

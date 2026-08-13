@@ -14,6 +14,26 @@ Welcome to **AgroVITa**! This repository hosts a full-stack web application, bui
 
 ---
 
+## 📸 Screenshots
+
+### Home Page
+<img src="screenshots/home-page.png" alt="Home Page">
+
+### Login Page
+<img src="screenshots/login-page.png" alt="Login Page">
+
+### Registration Page
+<img src="screenshots/registration-page.png" alt="Registration Page">
+
+### Crop Prediction
+<img src="screenshots/crop-prediction.png" alt="Crop Prediction">
+
+### Crop Prediction Result
+<img src="screenshots/crop-prediction-result.png" alt="Crop Prediction Result">
+
+### Machine Rental
+<img src="screenshots/machine-rental.png" alt="Machine Rental">
+
 ### 💻 Technologies Used
 
 * **Backend:**

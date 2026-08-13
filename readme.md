@@ -25,8 +25,8 @@ Welcome to **AgroVITa**! This repository hosts a full-stack web application, bui
 ### Login
 <img src="screenshots/login.png" alt="login" width="100%">
 
-### Prediction Mode
-<img src="screenshots/prediction_mode.png" alt="prediction_mode" width="100%">
+### Prediction Model
+<img src="screenshots/prediction_model.png" alt="prediction_mode" width="100%">
 
 ### Register
 <img src="screenshots/register.png" alt="register" width="100%">
